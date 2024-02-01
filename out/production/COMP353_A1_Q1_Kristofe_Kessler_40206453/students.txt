@@ -1,0 +1,7 @@
+SID,SName,Program,Address
+1,John,Computer Science,123 Main St
+2,Alice,Mathematics,456 Oak St
+3,Bob,Physics,789 Pine St
+4,Eve,Chemistry,101 Elm St
+5,Charlie,Biology,202 Maple St
+6,David,Computer Science,303 Cedar St

@@ -1,0 +1,6 @@
+CID,CName,NoOfCredits
+101,Databases,4
+102,Data Structures & Algorithms,3
+103,Machine Learning,4
+104,Operating Systems,4
+105,Discrete Mathematics,3
