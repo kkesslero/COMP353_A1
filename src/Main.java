@@ -117,7 +117,7 @@ public class Main {
 
 
     private static void performQuery(Student[] students, Course[] courses, Enrollment[] enrollments) {
-        System.out.println("Query Result:");
+        System.out.println("Result:");
         System.out.println("SID\tSName");
 
         for (Enrollment enrollment : enrollments) {
