@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+// Represents a student with SID, SName, Program, and Address attributes
 class Student {
     String SID;
     String SName;
@@ -18,6 +19,7 @@ class Student {
     }
 }
 
+// Represents a course with CID, CName, and NoOfCredits attributes
 class Course {
     String CID;
     String CName;
@@ -30,13 +32,14 @@ class Course {
     }
 }
 
+// Represents a student's enrollment with SID, CID, Semester, Year, and Grade attributes
 class Enrollment {
     String SID;
     String CID;
     String Semester;
     int Year;
     String Grade;
-
+    
     public Enrollment(String SID, String CID, String Semester, int Year, String Grade) {
         this.SID = SID;
         this.CID = CID;
@@ -48,13 +51,14 @@ class Enrollment {
 
 public class Main {
     public static void main(String[] args) {
-        // Load data from files
+
+        // Read the data from text files
         Student[] students = loadStudents("src/students.txt");
         Course[] courses = loadCourses("src/courses.txt");
         Enrollment[] enrollments = loadEnrollments("src/enrollments.txt");
 
-        // Perform the query
-        performQuery(students, courses, enrollments);
+        // Perform the query based on the data read from the text files
+        queryStudentsByEnrollment(students, courses, enrollments);
     }
 
     private static Student[] loadStudents(String fileName) {
@@ -115,11 +119,11 @@ public class Main {
         return enrollmentList.toArray(new Enrollment[0]);
     }
 
-
-    private static void performQuery(Student[] students, Course[] courses, Enrollment[] enrollments) {
+    // Perform the query to find students who satisfy the given enrollment conditions
+    private static void queryStudentsByEnrollment(Student[] students, Course[] courses, Enrollment[] enrollments) {
         System.out.println("Result:");
         System.out.println("SID\tSName");
-
+        
         for (Enrollment enrollment : enrollments) {
             if (enrollment.Semester.equals("Winter") && enrollment.Year == 2024 && enrollment.CID.equals("101")) {
                 if (enrollment.Grade.equals("B+") || enrollment.Grade.equals("A-") || enrollment.Grade.equals("A") || enrollment.Grade.equals("A+")) {
