@@ -45,8 +45,4 @@ The program performs a query to find students who:
 - Took the course with ID "101".
 - Received a grade of "B+", "A-", "A", or "A+".
 
-## Contributing
-
-Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
-
 ---
