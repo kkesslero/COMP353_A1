@@ -1,5 +1,3 @@
-Based on the provided Java code, here's a README file that explains what the program does and how to use it:
-
 ---
 
 # Student Enrollment Query System
