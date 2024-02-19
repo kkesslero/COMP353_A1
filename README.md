@@ -14,7 +14,7 @@ This Java program reads data from text files containing information about studen
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/student-enrollment-query.git
+   git clone https://github.com/kkesslero/COMP353_A1.git
    ```
 
 2. **Compile the Java Code:**
